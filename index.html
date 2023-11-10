@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <!-- ======= Google analytics for tannom ======= -->
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0KSS63BEZQ"></script>
 <script>
@@ -57,9 +58,18 @@
       a.appendChild(r);
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-
-<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/dd24902fec9c7ccc05030da0f/865b8390c30d3cd753be32452.js");
+  
+  <!-- ======= Mailchimp popup ======= -->
+<script id="mcjs">
+function showPopup() {
+!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/dd24902fec9c7ccc05030da0f/865b8390c30d3cd753be32452.js");
+ //unsetting the cookie
+ document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";                  
+      document.cookie = "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+}
 </script>
+
+
   <!-- =======================================================
   * Template Name: HeroBiz
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -924,7 +934,10 @@ Throughout this ongoing works for CA , Greg  has demonstrated a deep commitment 
               </ul> 
 
               <div class="text-center mt-auto">
-                <a href="#" class="buy-btn">Click to select how many- 1 or more</a>
+                <a href="#" onclick="showPopup()" class="buy-btn">
+                  Click to select how many- 1 or more
+                </a>
+                <!-- <a href="#" class="buy-btn" >Click to select how many- 1 or more</a> -->
               </div>
 
             </div>
@@ -948,7 +961,10 @@ Throughout this ongoing works for CA , Greg  has demonstrated a deep commitment 
               </ul>
 
               <div class="text-center mt-auto">
-                <a href="#" class="buy-btn">Click to select how many- 1 or more</a>
+                
+                <button onclick="showPopup()" class="buy-btn">
+                  Click to select how many- 1 or more
+                </button>
               </div>
 
             </div>
@@ -1363,13 +1379,44 @@ Throughout this ongoing works for CA , Greg  has demonstrated a deep commitment 
             </ul>
           </div> -->
 
+<!-- Mailchimp Form -->
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Leave your email to stay up to date with what's happening at Tannom</p>
-            <form action="" method="post">
+            <!-- <p>Leave your email to stay up to date with what's happening at Tannom</p> -->
+            <!-- <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
+            </form> -->
+            <div id="mc_embed_shell">
+              <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+          <style type="text/css">
+                #mc_embed_signup{background:#fff; false;clear:left; color: grey; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+            <form action="https://tannom.us10.list-manage.com/subscribe/post?u=dd24902fec9c7ccc05030da0f&amp;id=3be8495867&amp;f_id=0064e1e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                <div id="mc_embed_signup_scroll"><h4 style="color: green;">Stay up to date with what's happening at Tannom</h4>
+                    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                    <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
+                <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                </div>
+            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                <input type="text" name="b_dd24902fec9c7ccc05030da0f_3be8495867" tabindex="-1" value="">
+            </div>
+                <div class="optionalParent">
+                    <div class="clear foot">
+                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                        <p style="margin: 0px auto;"><a href="http://eepurl.com/iDHvXg" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[4]='PHONE';ftypes[4]='phone';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+        
           </div>
 
         </div>
