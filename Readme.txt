@@ -11,12 +11,12 @@ License: https://bootstrapmade.com/license/
 
 
 TO DOS 
-1 gmail
+1 google analytics
 2 hotjar
 3 mailchimp 
 4 fb, insta, tiktok
 5 paypal subscribe or other payment gateway
 https://developer.paypal.com/api/nvp-soap/paypal-payments-standard/integration-guide/checkout-exp-subscribe/
-6 buy domain
-7 domain email 
+6 accelerator applicaiton
+7 MVP 
 8 gcash & maya 
